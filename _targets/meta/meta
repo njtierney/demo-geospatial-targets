@@ -1,5 +1,7 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|7667d3ab761f28f7|||||||||||||||
+.Random.seed|object|78c15123ab3f5155|||||||||||||||
+country_codes|stem|133bf447aa0eafd6|be743cc18981c374|ef46db3751d8e999|1743036428||t19774.0158740403s|c54907a2f546a1d9|519|rds|local|vector|||0.004||
+example_gadm|stem||f9cb53e481eede81|d09ad544ac2e683a|323743517||t19774.0158741498s||0|format_custom&read=ZnVuY3Rpb24gKHBhdGgpIAp0ZXJyYTo6dmVjdChwYXRoKQ&write=ZnVuY3Rpb24gKG9iamVjdCwgcGF0aCkgCnsKICAgIHRlcnJhOjp3cml0ZVZlY3Rvcih4ID0gb2JqZWN0LCBmaWxlbmFtZSA9IHBhdGgsIGZpbGV0eXBlID0gIkVTUkkgU2hhcGVmaWxlIiwgCiAgICAgICAgb3ZlcndyaXRlID0gVFJVRSkKfQ&marshal=ZnVuY3Rpb24gKG9iamVjdCkgCnRlcnJhOjp3cmFwKG9iamVjdCk&unmarshal=ZnVuY3Rpb24gKG9iamVjdCkgCnRlcnJhOjp1bndyYXAob2JqZWN0KQ&convert=&copy=&repository=|local|vector|||0.002||error in evaluating the argument x in selecting a method for function unique object subset_country_codes not found
 example_rast|stem|743c558dfc4b03c1|bf0425b05d243737|af4a8bb03355c423|-994020973||t19774.0076894232s|d1008b55ac0d19bc|7992|format_custom&read=ZnVuY3Rpb24gKHBhdGgpIAp0ZXJyYTo6cmFzdChwYXRoKQ&write=ZnVuY3Rpb24gKG9iamVjdCwgcGF0aCkgCnsKICAgIHRlcnJhOjp3cml0ZVJhc3Rlcih4ID0gb2JqZWN0LCBmaWxlbmFtZSA9IHBhdGgsIGZpbGV0eXBlID0gIkdUaWZmIiwgCiAgICAgICAgb3ZlcndyaXRlID0gVFJVRSkKfQ&marshal=ZnVuY3Rpb24gKG9iamVjdCkgCnRlcnJhOjp3cmFwKG9iamVjdCk&unmarshal=ZnVuY3Rpb24gKG9iamVjdCkgCnRlcnJhOjp1bndyYXAob2JqZWN0KQ&convert=&copy=&repository=|local|vector|||0.009||
 example_shapefile|stem|f2994f4830690181|53b975477a2b18b8|8172b4336a43a6ce|-2127102470||t19774.0092728163s|c41d69846229636a|66692|format_custom&read=ZnVuY3Rpb24gKHBhdGgpIAp0ZXJyYTo6dmVjdChwYXRoKQ&write=ZnVuY3Rpb24gKG9iamVjdCwgcGF0aCkgCnsKICAgIHRlcnJhOjp3cml0ZVZlY3Rvcih4ID0gb2JqZWN0LCBmaWxlbmFtZSA9IHBhdGgsIGZpbGV0eXBlID0gIkVTUkkgU2hhcGVmaWxlIiwgCiAgICAgICAgb3ZlcndyaXRlID0gVFJVRSkKfQ&marshal=ZnVuY3Rpb24gKG9iamVjdCkgCnRlcnJhOjp3cmFwKG9iamVjdCk&unmarshal=ZnVuY3Rpb24gKG9iamVjdCkgCnRlcnJhOjp1bndyYXAob2JqZWN0KQ&convert=&copy=&repository=|local|vector|||0.013||
 format_geotiff|object|e3a27ad911db3755|||||||||||||||
@@ -7,3 +9,4 @@ format_geovec|object|8d3511e5bdfbb1bf|||||||||||||||
 format_shapefile|object|8d3511e5bdfbb1bf|||||||||||||||
 get_example_rast|function|127eec4b9918ebd7|||||||||||||||
 get_example_shapefile|function|be62f3ea264c3c8c|||||||||||||||
+get_gadm_country|function|01ca8de19930ce96|||||||||||||||

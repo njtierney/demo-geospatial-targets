@@ -30,11 +30,35 @@ format_shapefile <- tar_format(
 
 I got the error:
 
+```r
+tar_make(example_shapefile)
 ```
-> tar_make(example_shapefile)
+
+```
 terra 1.7.55
 ▶ start target example_shapefile
 ● built target example_shapefile [0.013 seconds]
+Error:
+! Error running targets::tar_make()
+  Error messages: targets::tar_meta(fields = error, complete_only = TRUE)
+  Debugging guide: https://books.ropensci.org/targets/debugging.html
+  How to ask for help: https://books.ropensci.org/targets/help.html
+  Last error: the write() function in tar_format() must not create a directory. Found directories inside the data store where there should only be files: _targets/objects/example_shapefile
+```
+
+I also get the same error when I run 
+
+```r
+tar_make(example_gadm)
+```
+
+```
+Loading required package: terra
+terra 1.7.55
+▶ start target country_codes
+● built target country_codes [0.004 seconds]
+▶ start target example_gadm
+✖ error target example_gadm
 Error:
 ! Error running targets::tar_make()
   Error messages: targets::tar_meta(fields = error, complete_only = TRUE)

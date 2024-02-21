@@ -17,7 +17,14 @@ tar_plan(
     example_shapefile,
     get_example_shapefile(),
     format = format_shapefile
-  )
+  ),
 
+  country_codes = country_codes(query = "Australia"),
+
+  tar_target(
+    example_gadm,
+    get_gadm_country(country_codes),
+    format = format_shapefile
+  )
 
 )
