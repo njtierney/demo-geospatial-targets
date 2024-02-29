@@ -7,7 +7,7 @@ format_geoparquet <- tar_format(
     arrow::write_parquet(as.data.frame(object, geom="WKT"), path)
   },
   marshal = function(object) {
-    arrow::as_arrow_table(object)
+    arrow::as_arrow_table(as.data.frame(object, geom = "WKT"))
   },
   unmarshal = function(object) {
     as.data.frame(object) |>
