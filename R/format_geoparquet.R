@@ -4,7 +4,7 @@ format_geoparquet <- tar_format(
       dplyr::mutate(dplyr::across(wk::is_handleable, wk::as_wkb))
   },
   write = function(object, path) {
-    arrow::write_parquet(object, path)
+    arrow::write_parquet(as.data.frame(object, geom="WKT"), path)
   },
   marshal = function(object) {
     arrow::as_arrow_table(object)
