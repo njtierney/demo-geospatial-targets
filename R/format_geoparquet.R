@@ -1,7 +1,8 @@
 format_geoparquet <- tar_format(
   read = function(path) {
     arrow::read_parquet(path) |>
-      dplyr::mutate(dplyr::across(wk::is_handleable, wk::as_wkb))
+      dplyr::mutate(dplyr::across(wk::is_handleable, wk::as_wkb)) |>
+      terra::vect(geom = "geometry")
   },
   write = function(object, path) {
     arrow::write_parquet(as.data.frame(object, geom="WKT"), path)
