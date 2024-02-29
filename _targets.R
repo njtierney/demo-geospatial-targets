@@ -22,7 +22,7 @@ tar_plan(
   country_codes = country_codes(query = "Australia"),
 
   tar_target(
-    example_gadm,
+    example_gadm.zip,
     get_gadm_country(country_codes$ISO3),
     format = format_shapefile
   )
