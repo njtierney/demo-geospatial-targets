@@ -8,8 +8,9 @@
 #' @author njtierney
 #' @export
 get_gadm_country <- function(country = "Australia") {
+  dir.create("data/shapefiles", recursive = TRUE, showWarnings = FALSE)
   gadm(
-    country = subset_country_codes$ISO3,
+    country = country,
     level = 0,
     path = "data/shapefiles",
     version = "4.1",

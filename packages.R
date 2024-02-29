@@ -1,7 +1,10 @@
 ## library() calls go here
+library(arrow)
 library(conflicted)
 library(dotenv)
 library(geodata)
+library(geoarrow)
 library(targets)
 library(tarchetypes)
 library(terra)
+library(wk)
