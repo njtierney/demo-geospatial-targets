@@ -7,3 +7,5 @@
 .DS_Store
 .quarto
 data
+demo_files
+doc/*.html
