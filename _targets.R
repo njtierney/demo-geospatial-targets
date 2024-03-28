@@ -26,6 +26,17 @@ tar_plan(
   tar_terra_vect(
     example_gadm_multiple,
     get_gadm_country(c("Australia", "New Zealand"))
+  ),
+
+  # alternative approach to using gadm for boundaries
+  tar_terra_vect(
+    example_cgaz_country,
+    cgaz_country("Australia")
+  ),
+
+  tar_terra_vect(
+    example_cgaz_countries,
+    cgaz_country(c("Australia", "New Zealand"))
   )
 
 )

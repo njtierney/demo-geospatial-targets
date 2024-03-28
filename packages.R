@@ -10,3 +10,7 @@ library(tarchetypes)
 library(terra)
 library(wk)
 library(quarto)
+# from hypertidy/sds
+library(sds)
+# from hypertidy/dsn
+library(dsn)
