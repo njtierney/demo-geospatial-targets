@@ -37,6 +37,13 @@ tar_plan(
   tar_terra_vect(
     example_cgaz_countries,
     cgaz_country(c("Australia", "New Zealand"))
+  ),
+
+  # example of using the spatvector from one target into another
+  tar_terra_rast(
+    example_sds_raster_oz,
+    sds_gebco(country_vect = example_cgaz_country,
+              resolution = 1)
   )
 
 )
