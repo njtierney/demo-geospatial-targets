@@ -4,6 +4,14 @@ source("./packages.R")
 ## Load your R files
 lapply(list.files("./R", full.names = TRUE), source)
 
+my_controller <- crew::crew_controller_local(
+  name = "bananas",
+  workers = 3
+)
+tar_option_set(
+  controller = my_controller
+)
+
 tar_plan(
 
   tar_terra_rast(
@@ -44,6 +52,18 @@ tar_plan(
     example_sds_raster_oz,
     sds_gebco(country_vect = example_cgaz_country,
               resolution = 1)
+  ),
+
+  ## demonstration using many countries and multiple workers
+  tar_target(
+    some_countries,
+    countrycode::codelist$iso3c[1:6]
+  ),
+
+  tar_terra_vect(
+    country_shapes,
+    cgaz_country(some_countries),
+    pattern = map(some_countries)
   )
 
   # TODO
