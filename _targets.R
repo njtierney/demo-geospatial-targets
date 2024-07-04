@@ -64,6 +64,22 @@ tar_plan(
     country_shapes,
     cgaz_country(some_countries),
     pattern = map(some_countries)
+  ),
+
+  tar_target(
+    my_file,
+    system.file("ex/elev.tif", package="terra"),
+    format = "file"
+  ),
+  tar_terra_rast(
+    my_map,
+    terra::rast(my_file)
+  ),
+  tar_terra_tiles(
+    name = rast_split,
+    raster = my_map,
+    ncol = 2,
+    nrow = 2
   )
 
   # TODO
